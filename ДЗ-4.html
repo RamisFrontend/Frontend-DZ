@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДЗ-4</title>
+</head>
+<body>
+  <script>
+    "use strict"
+
+    const userNumber = prompt ('Вести число');
+    const units = userNumber % 10;
+    const tens = Math.trunc (userNumber / 10) % 10;
+    const hundreds = Math.trunc (userNumber / 100) % 10; 
+
+    console.log (`В числе ${userNumber} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`);
+  </script>
+</body>
+</html>
